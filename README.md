@@ -1,6 +1,7 @@
 # Rahiya Project
 
-**Rahiya** is a MERN stack project that provides a responsive and reliable ride-hailing experience. It includes features for both users and admins, with role-based access control and a dynamic UI to ensure an intuitive experience for all users.
+Rahiya is a database-driven project built using the MERN stack, designed to provide a responsive and reliable ride-hailing experience. Originally developed as a database course project, it includes robust features for both users and admins, utilizing SQL and MongoDB for data management and storage. With role-based access control and a dynamic UI, Rahiya offers an intuitive interface, showcasing our practical understanding of databases within a full-stack application.
+
 
 ---
 
