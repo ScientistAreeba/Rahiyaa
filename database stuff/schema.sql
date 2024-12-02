@@ -134,7 +134,7 @@ CREATE TABLE Emergency_Contacts (
 );
 
 #support ticket thingy table
-CREATE TABLE SUpport_Tickets(
+CREATE TABLE Support_Tickets(
     ticket_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     subject VARCHAR(255) not null,
