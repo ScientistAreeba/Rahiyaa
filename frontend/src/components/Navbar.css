@@ -1,26 +1,25 @@
 .navbar {
-  background-color: #b42852;
+  background-color: #e91e63;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #fddede;
+  border-bottom: 2px solid #F4C2C2;
 }
 
 .navbar h1 {
   color: #F4C2C2;
-  font-size: 30px;
+  font-size: 24px;
   font-family: Arial, sans-serif;
 }
 
 .nav-links a {
   margin-right: 15px;
   text-decoration: none;
-  color: #fddede;
+  color: #F4C2C2;
   font-weight: bold;
 }
 
 .nav-links a:hover {
   color: #FFFFFF;
 }
-
