@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -16,7 +16,7 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
 

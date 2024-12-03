@@ -16,24 +16,26 @@ function Home() {
         </div>
       </header>
 
-      <section className="features">
-        <h2>Why Choose Rahiyaa?</h2>
-        <div className="feature-item">
-          <i className="icon fa fa-female"></i>
-          <h3>Women-Only Drivers</h3>
-          <p>All our drivers are carefully vetted women to ensure maximum comfort and safety.</p>
-        </div>
-        <div className="feature-item">
-          <i className="icon fa fa-shield"></i>
-          <h3>Advanced Safety Features</h3>
-          <p>Real-time tracking, emergency SOS, and verified background checks.</p>
-        </div>
-        <div className="feature-item">
-          <i className="icon fa fa-tags"></i>
-          <h3>Transparent Pricing</h3>
-          <p>No surge pricing. Fair, upfront rates with no hidden charges.</p>
-        </div>
-      </section>
+     <section className="features">
+  <h2>Why Choose Rahiyaa?</h2>
+  <div className="feature-grid">
+    <div className="feature-item">
+      <i className="icon fa fa-female"></i>
+      <h3>Women-Only Drivers</h3>
+      <p>All our drivers are carefully vetted women to ensure maximum comfort and safety.</p>
+    </div>
+    <div className="feature-item">
+      <i className="icon fa fa-shield"></i>
+      <h3>Advanced Safety Features</h3>
+      <p>Real-time tracking, emergency SOS, and verified background checks.</p>
+    </div>
+    <div className="feature-item">
+      <i className="icon fa fa-tags"></i>
+      <h3>Transparent Pricing</h3>
+      <p>No surge pricing. Fair, upfront rates with no hidden charges.</p>
+    </div>
+  </div>
+</section>
 
       <footer className="home-footer">
         <p>&copy; 2024 Rahiyaa. All rights reserved.</p>

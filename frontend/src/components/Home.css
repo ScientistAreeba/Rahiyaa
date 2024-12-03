@@ -1,65 +1,211 @@
-.home-container {
-  font-family: 'Arial', sans-serif;
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #FAA0A0; /* Baby pink background */
   color: #333;
-  text-align: center;
-  background-color: #fdf1f5;
-  padding: 20px;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+.home-container {
+  width: 100%;
+  min-height: 100vh; /* Ensure full height for scrolling */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
 .home-header {
-  padding: 30px;
-  background-color: #ffe6ec;
+  padding: 60px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, #FAA0A0, #E0115F);
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .home-header h1 {
-  color: #e91e63;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
 
-.home-buttons .button-primary,
-.home-buttons .button-secondary {
-  padding: 10px 20px;
-  margin: 10px;
+.home-header p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-primary, .button-secondary {
+  padding: 15px 30px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.button-primary {
+  background-color: white;
+  color: #E0115F;
+  border: 2px solid white;
+}
+
+.button-primary:hover {
+  background-color: #F8C8DC;
+  transform: translateY(-5px);
+}
+
+.button-secondary {
+  background-color: #E37383;
   color: white;
-  border-radius: 5px;
+  border: 2px solid white;
 }
 
-.home-buttons .button-primary {
-  background-color: #e91e63;
+.button-secondary:hover {
+  background-color: #F8C8DC;
+  transform: translateY(-5px);
 }
 
-.home-buttons .button-secondary {
-  background-color: #ff4081;
-}
-
+/* Features Section */
 .features {
-  margin: 40px 0;
+  padding: 40px 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.8rem;
+  color: #ff66b2;
+  margin-bottom: 40px;
+}
+
+/* Full-Width Three-Column Layout */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .feature-item {
-  margin: 20px;
-  padding: 15px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 400px; /* Increase height for longer content */
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item h3 {
-  color: #d81b60;
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #ff66b2;
+}
+
+.feature-item p {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .icon {
-  font-size: 40px;
-  color: #e91e63;
+  font-size: 3rem;
+  color: #ff66b2;
+  margin-bottom: 10px;
 }
 
+/* Footer */
 .home-footer {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #ffcdd2;
+  background-color: #ff4da6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .home-footer a {
-  color: #e91e63;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .home-header h1 {
+    font-size: 3rem;
+  }
+
+  .home-header p {
+    font-size: 1.2rem;
+  }
+
+  .features h2 {
+    font-size: 2.4rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    padding: 40px 5%;
+  }
+
+  .home-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-header p {
+    font-size: 1rem;
+  }
+
+  .features {
+    padding: 30px 5%;
+  }
+
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-header p {
+    font-size: 0.9rem;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
 }
 

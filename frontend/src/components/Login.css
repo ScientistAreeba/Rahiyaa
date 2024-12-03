@@ -1,0 +1,148 @@
+/* Ensure the gradient background spans full screen */
+.gradient-custom-2 {
+  background: #fccb90; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); /* Safari and older browsers */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); /* Standard */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling: Center the form and ensure proper width */
+.card {
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 900px; /* Limit max width */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Ensure both sections are side by side */
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+
+/* Left Section (Login Form) */
+.col-lg-6.form-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Right Section (Text Information) */
+.col-lg-6.info-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #d8363a, #b44593); /* Gradient background for text section */
+  color: white;
+}
+
+.info-section h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.info-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Form Inputs */
+.form-outline {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Style for the primary login button */
+.btn-primary {
+  background-color: #ee7724;
+  border-color: #ee7724;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.btn-primary:hover {
+  background-color: #d8363a;
+  border-color: #d8363a;
+  transform: scale(1.05);
+}
+
+/* Style for the "Create New" button */
+.btn-outline-danger {
+  border-color: #dd3675;
+  color: #dd3675;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dd3675;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Style for the text-muted link */
+.text-muted {
+  color: #aaa;
+}
+
+.text-muted:hover {
+  text-decoration: underline;
+  color: #d8363a;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 767px) {
+  .gradient-form {
+    height: auto;
+    padding: 20px;
+  }
+
+  .gradient-custom-2 {
+    border-radius: 0;
+  }
+
+  .col-lg-6 {
+    margin-bottom: 20px;
+    flex: 1 1 100%; /* Stack sections on small screens */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn-primary,
+  .btn-outline-danger {
+    width: 100%;
+  }
+}
+
