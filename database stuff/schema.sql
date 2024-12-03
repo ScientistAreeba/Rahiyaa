@@ -162,3 +162,26 @@ CREATE TABLE Ride_Promotions(
     FOREIGN KEY (ride_id) REFERENCES Rides(ride_id),
     FOREIGN KEY (promo_id) REFERENCES Promotions(promo_id)
 );
+
+CREATE TABLE ScheduleRides (
+    schedule_id INT PRIMARY KEY AUTO_INCREMENT,
+    ride_id INT NOT NULL,
+    driver_id INT NOT NULL,
+    schedule_pickupLocation VARCHAR(255) NOT NULL,
+    schedule_dropoffLocation VARCHAR(255) NOT NULL,
+    schedule_Date_Time DATETIME NOT NULL,
+    Schedule_status ENUM('confirmed', 'pending', 'denied') DEFAULT 'pending',
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ride_id) REFERENCES Rides(ride_id),
+    FOREIGN KEY (driver_id) REFERENCES Drivers(driver_id)
+);
+
+
+CREATE TABLE CARPOOLING (
+    carpool_id INT PRIMARY KEY AUTO_INCREMENT,
+    ride_id INT NOT NULL,
+    max_capacity INT NOT NULL,
+    current_riders INT NOT NULL,
+    FOREIGN KEY (ride_id) REFERENCES Rides(ride_id)
+);
+
